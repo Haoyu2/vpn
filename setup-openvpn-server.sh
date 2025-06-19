@@ -200,7 +200,7 @@ EOF
 
 # Create client certificate generation script
 echo "Creating client certificate generation script..."
-cat > /etc/openvpn/client-configs/make_config.sh << 'EOF'
+cat > /etc/openvpn/client-configs/make_config.sh << "EOF"
 #!/bin/bash
 
 # OpenVPN Client Configuration Generator (NAT Traversal + Public IP Access)
@@ -218,7 +218,15 @@ PUBLIC_IP_RANGES="$2"
 cd /etc/openvpn/easy-rsa
 
 # Generate client certificate
+echo "Generating client certificate for: $CLIENT_NAME"
 ./easyrsa build-client-full $CLIENT_NAME nopass
+
+# Check if certificate generation was successful
+if [ ! -f "pki/issued/$CLIENT_NAME.crt" ] || [ ! -f "pki/private/$CLIENT_NAME.key" ]; then
+    echo "ERROR: Failed to generate client certificate for $CLIENT_NAME"
+    echo "Please check if Easy-RSA is properly initialized and try again."
+    exit 1
+fi
 
 # Create client configuration directory
 mkdir -p /etc/openvpn/client-configs/files
