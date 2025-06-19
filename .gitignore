@@ -1,0 +1,51 @@
+# VPN Configuration Files (sensitive)
+*.ovpn
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# OpenVPN specific
+/etc/openvpn/
+/var/log/openvpn.log
+openvpn-status.log
+
+# StrongSwan specific
+/etc/ipsec.d/
+/etc/strongswan.d/
+/var/log/charon.log
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Certificate directories
+certs/
+private/
+cacerts/
+
+# Configuration backups
+*.conf.bak
+*.rules.backup
+
+# Network configuration
+/etc/iptables-backup.rules
+netfilter-persistent.rules
+
+# User-specific files
+.env
+.secrets 
