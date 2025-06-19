@@ -7,12 +7,12 @@ This repository contains comprehensive automation scripts for setting up VPN ser
 ### StrongSwan (IPsec) Setup
 ```bash
 # Server (Alpine Linux)
-wget https://raw.githubusercontent.com/your-username/vpn/main/setup-strongswan-server.sh
+wget https://raw.githubusercontent.com/Haoyu2/vpn/main/setup-strongswan-server.sh
 chmod +x setup-strongswan-server.sh
 sudo ./setup-strongswan-server.sh
 
 # Client (Alpine Linux)
-wget https://raw.githubusercontent.com/your-username/vpn/main/setup-strongswan-client.sh
+wget https://raw.githubusercontent.com/Haoyu2/vpn/main/setup-strongswan-client.sh
 chmod +x setup-strongswan-client.sh
 sudo ./setup-strongswan-client.sh
 ```
@@ -20,12 +20,12 @@ sudo ./setup-strongswan-client.sh
 ### OpenVPN Setup
 ```bash
 # Server (Ubuntu)
-wget https://raw.githubusercontent.com/your-username/vpn/main/setup-openvpn-server.sh
+wget https://raw.githubusercontent.com/Haoyu2/vpn/main/setup-openvpn-server.sh
 chmod +x setup-openvpn-server.sh
 sudo ./setup-openvpn-server.sh
 
 # Client (Ubuntu)
-wget https://raw.githubusercontent.com/your-username/vpn/main/setup-openvpn-client.sh
+wget https://raw.githubusercontent.com/Haoyu2/vpn/main/setup-openvpn-client.sh
 chmod +x setup-openvpn-client.sh
 sudo ./setup-openvpn-client.sh
 ```

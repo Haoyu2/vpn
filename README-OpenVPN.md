@@ -44,7 +44,7 @@ Internet
 
 ```bash
 # Download and run server setup
-wget https://raw.githubusercontent.com/your-repo/vpn/main/setup-openvpn-server.sh
+wget https://raw.githubusercontent.com/Haoyu2/vpn/main/setup-openvpn-server.sh
 chmod +x setup-openvpn-server.sh
 sudo ./setup-openvpn-server.sh
 ```
@@ -61,7 +61,7 @@ Configure your router to forward UDP port 1194 to the server:
 
 ```bash
 # Download and run client setup
-wget https://raw.githubusercontent.com/your-repo/vpn/main/setup-openvpn-client.sh
+wget https://raw.githubusercontent.com/Haoyu2/vpn/main/setup-openvpn-client.sh
 chmod +x setup-openvpn-client.sh
 sudo ./setup-openvpn-client.sh
 ```
